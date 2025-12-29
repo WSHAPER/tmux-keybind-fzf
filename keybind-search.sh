@@ -16,4 +16,4 @@ tmux display-popup -E -w 80% -h 80% "tmux list-keys -T prefix | \
   sort -u | \
   fzf --header='Tmux Keybindings (prefix +)' \
       --preview-window=hidden \
-      --layout=reverse"
+      --layout=reverse || true"
